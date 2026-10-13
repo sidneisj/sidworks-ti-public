@@ -1,0 +1,7 @@
+Vaga,Link,Sugerido
+Analista de Dados Júnior,https://example.org/vagas/1001,nao
+Desenvolvedor Python Pleno,https://example.org/vagas/1002?origem=rss,nao
+Analista de Governança de Dados,https://example.org/vagas/1003,sim
+Estágio em TI,https://example.org/vagas/1004,nao
+Desenvolvedor Python Pleno - vaga repetida,https://example.org/vagas/1002?origem=duplicado,nao
+Especialista em Infraestrutura,https://example.org/vagas/1005,nao

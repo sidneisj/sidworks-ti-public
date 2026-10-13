@@ -1,0 +1,8 @@
+name: SidWorks TI - Execução manual
+on:
+  workflow_dispatch:
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Automação legada desativada. Configure credenciais e dependências antes de reativar."

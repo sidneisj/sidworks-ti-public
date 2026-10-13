@@ -1,0 +1,16 @@
+requests
+feedparser
+beautifulsoup4
+pyshorteners
+gspread
+oauth2client
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
+google-auth
+fpdf2==2.7.8
+python-docx
+pandas
+sgmllib3k
+pydrive2
+python-dotenv>=1.0

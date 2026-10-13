@@ -1,0 +1,9 @@
+# Evita alterações artificiais de LF/CRLF entre Windows e Linux
+* text=auto
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+*.json text eol=lf
+*.ipynb text eol=lf
+*.md text eol=lf

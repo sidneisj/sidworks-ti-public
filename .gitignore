@@ -1,0 +1,25 @@
+# Credenciais pessoais (sempre privadas)
+creds/credentials.json
+creds/credentials_gmail.json
+creds/token_gmail.pickle
+token_gmail.json
+creds/token_gmail.json
+creds/token.json
+credentials.json
+credentials_gmail.json
+token_gmail.pickle
+token.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Gerados localmente
+__pycache__/
+*.py[cod]
+.venv/
+.sidworks_execucao
+exports/
+Relatorios/
+*.log
+.ipynb_checkpoints/
