@@ -4,6 +4,12 @@ Projeto desenvolvido por **Sidnei de Souza Júnior** e utilizado para organizar 
 
 **Status:** operação original encerrada; código legado aberto para estudos, portfólio e experimentação.
 
+## Experimentar sem instalar nada (Google Colab)
+
+[![Abrir no Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sidneisj/sidworks-ti-public/blob/main/colab/SidWorksTI.ipynb)
+
+O notebook público clona este repositório em um ambiente temporário do Colab, instala as dependências e executa `python main.py --demo` com **vagas fictícias**, sem solicitar credenciais Google, montar seu Drive ou alterar suas planilhas. Os relatórios PDF e DOCX gerados podem ser baixados ao final. **A execução do notebook no serviço Colab ainda precisa ser confirmada por um usuário.**
+
 ## Início rápido (demonstração sem contas Google)
 
 **Windows (Git Bash):**
@@ -50,6 +56,12 @@ Sheets, Drive, TinyURL nem credenciais Google. As vagas e URLs de `example.org` 
 > requer sua configuração Google e pode sobrescrever abas da planilha indicada.
 > Não o utilize com uma planilha de produção antes de revisar a configuração.
 
+## Tecnologias e arquitetura
+
+**Python**, Google Alerts/RSS, Gmail API, Google Sheets API, Google Drive API, GitHub Actions (utilizado na automação original), FPDF2 e python-docx.
+
+Consulte a [arquitetura do projeto](docs/arquitetura.md) e as [instruções da planilha](docs/planilha.md).
+
 ## Visão geral
 
 Google Alerts (RSS) + alertas do LinkedIn recebidos no Gmail (opcionais) + links sugeridos → processamento Python → classificação por palavras-chave, normalização e deduplicação → Google Sheets → PDFs/DOCX → Google Drive (opcional) → publicação manual no WhatsApp.
@@ -65,7 +77,7 @@ A publicação em WhatsApp era manual; o sistema gerava o material a ser compart
 5. Veja `creds/README.md`: crie suas próprias credenciais Google e coloque `credentials.json` dentro de `creds/`. A autenticação Gmail é opcional quando se deseja trabalhar apenas com RSS.
 6. Execute `python main.py`. As saídas serão salvas em `exports/`, a menos que `SIDWORKS_REPORTS_PATH` seja alterado.
 
-Para autorizar o Gmail localmente, siga `creds/README.md` e execute `python scripts/gerar_token_drive.py`. Para Colab, consulte `colab/SidWorksTI.ipynb` (é necessário fornecer as próprias credenciais).
+Para autorizar o Gmail localmente, siga `creds/README.md` e execute `python scripts/gerar_token_drive.py`. Para experimentar no Colab sem contas Google, abra o [notebook de demonstração](colab/SidWorksTI.ipynb). O fluxo real com APIs Google exige credenciais próprias e **não é executado automaticamente** no notebook.
 
 ## Testes locais (sem autenticação Google)
 
@@ -88,7 +100,10 @@ Estes testes verificam normalização, categorização, deduplicação e a gera�
 
 ## Projeto original e portfólio
 
-O SidWorks TI foi empregado na divulgação de oportunidades no WhatsApp. Este repositório documenta seu funcionamento e o desenvolvimento técnico: integrações Google, coleta RSS/Gmail, tratamento e classificação de registros, deduplicação, geração de relatórios e automação. A publicação do código ocorreu após o encerramento da operação.
+**Autoria:** Sidnei de Souza Júnior. O projeto foi desenvolvido e operado antes da abertura do código, com divulgação de oportunidades de TI por meio de mensagens preparadas para WhatsApp. O código-fonte original permaneceu em repositório privado; este repositório público apresenta uma versão revisada, documentada e com dados de exemplo.
+
+
+Este repositório documenta seu funcionamento e o desenvolvimento técnico: integrações Google, coleta RSS/Gmail, tratamento e classificação de registros, deduplicação, geração de relatórios e automação. A publicação do código ocorreu após o encerramento da operação.
 
 ## Limitações e transparência
 
